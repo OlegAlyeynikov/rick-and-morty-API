@@ -81,7 +81,7 @@ async def save_characters(characters: list[Character]) -> None:
 
 
 async def sync_characters_with_api() -> None:
-    characters = await scrape_characters9()
+    characters = await scrape_characters()
     await save_characters(characters)
 
 
